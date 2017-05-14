@@ -1,0 +1,50 @@
+Term Project: Call of Duty: 112 - Zombies 
+    
+Name: Luca Amblard
+Andrew ID: lamblard
+Section: D
+
+Problem and Solution
+
+The main problem I had to solve in my term project was figuring out a creative
+way to apply backtracking to make zombies follow the soldier in the map.
+My first attempt was extremely inefficient to the point where the zombies would
+not move at all.
+
+At first my map had open space so the first way I dealt with the inefficiency
+was  making narrower paths. This works because the number of legal locations
+for the zombies to check is significantly reduced. 
+
+Additionally, in the backtracking algorithm, instead of looping through all
+possible directions to check in the same order every time, I re-orderd the
+directions.
+
+I ordered the directions to check giving priority to the directions that
+correspond to the directions from where the zombie, exectuing the algorithm, is
+located to where the soldier is located. 
+
+I did not make the zombies execute the backtracking algorithm all the time
+because that would have been too inefficient.
+I modelled the zombies as moving on a grid. A zombie spawns at an intersection
+of the grid. The zombie executes the backtracking algorithm and then starts 
+moving along a line of the grid. The zombie only re-executes the backtracking
+algorithm when it it reaches the intersection of the grid it started moving
+towards.
+
+The bots in the coop mode use a similar backtracking algorithm as the zombies.
+A bot determines whether there is a zombie to shoot while the bot is at an
+intersection of the grid. It does this by loop through the cells in each
+direction and checking if there is a zombie in the cell. If there is, the bot
+shoots the zombie. The bot does not shoot the zombie if there is a wall between
+the two (unless the penetration power up has been picked up, which allows this
+to happen).
+
+
+
+
+
+
+
+
+
+

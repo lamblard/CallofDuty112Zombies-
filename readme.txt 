@@ -1,0 +1,26 @@
+Term Project: Call of Duty: 112 - Zombies 
+    
+Name: Luca Amblard
+Andrew ID: lamblard
+Section: D
+
+Readme File
+
+My game is called Call of Duty: 112 - Zombies. The user controls a soldier. The goal is for the user to survive as many zombie rounds as possible. The user moves to the next round by collecting all the apples dispersed in the map. The number of zombies in the map at a given round is constant (a new zombie spawns when you kill a zombie) but as the round increases, the zombies require more bullets to kill, they become faster and/or greater in number.
+The soldier dies if time at a given round runs out or if there is a collision between him and a zombie.
+There is the standard zombie and also a type of zombie that can move through walls.
+Power ups spawn in the map throughout the game.
+There is a solo mode and a coop mode.
+In the coop mode, the bots help the user kill zombies throughout the game.
+
+
+To use my project, have pygame and python 3 installed.
+Download my whole termProject folder.
+Open my termProjectRunGame.py file located in the Project Source and Support Files folder inside my termProject folder in a code editor and run it.
+
+Enjoy!
+
+
+
+
+
